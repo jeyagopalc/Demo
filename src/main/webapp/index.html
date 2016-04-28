@@ -2,7 +2,6 @@
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,12 +48,20 @@
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<button type="button" class="btn btn-login-page">Login</button>
-							<button type="button" class="btn btn-signup-page">Signup</button>
-							<button type="button" class="btn btn-questions">Questions</button>
-				            <button type="button" class="btn btn-ask-question">Ask Question</button>
+							
+							<button type="button" class="btn-link btn-login-page"><a href="#">Login</a> </button>
+							<button type="button" class="btn-link btn-signup-page"><a href="#">Signup</a></button>
+							<button type="button" class="btn-link btn-questions"><a href="#">Questions</a></button>
+				            <button type="button" class="btn-link btn-ask-question"><a href="#">Ask Question</a></button>
 							<input type="text" name="q" id="site-search-input" autocomplete="off" value="Search" class="gray" />
-							<span id="g-search-button"></span>						
+							<span id="g-search-button"></span>	
+
+							<span class="li-social">
+								<a href="#"><i class="fa fa-facebook"></i></a> 
+								<a href="#"><i class="fa fa-twitter"></i></a> 
+								<a href="#"><i class="fa fa-envelope"></i></a> 
+								<a href="#"><i class="fa fa-skype"></i></a>
+							</span>							
 						</li>
 					</ul>
 				</div>
@@ -79,7 +86,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1>You must be logged in to ask a question on Lets Discuss</h1>                            
+                            <h1>You must be logged in to ask a questions.</h1>                            
                         </div>
                     </div>
                     <div class="row">
@@ -94,7 +101,7 @@
 		                        			<i class="fa fa-user"></i>
 		                        		</div>
 										<div class = "login-error-info" style="display: none;">
-											<h1> Your username or password is incorrect. Please try again</h1>
+											<h4> Your username or password is incorrect. Please try again !!!</h4>
 										</div>
 		                            </div>
 		                            <div class="form-bottom">				                    
@@ -153,8 +160,8 @@
 		                            </div>
 		                            <div class="form-bottom">
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-email">Name</label>
-				                        	<input type="text" name="form-email" placeholder="Name..." class="form-email form-control" id="form-email">
+				                        	<label class="sr-only" for="form-email">Email</label>
+				                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
 				                        </div>
 				                        <div class="form-group">
 				                    		<label class="sr-only" for="form-password">Password</label>

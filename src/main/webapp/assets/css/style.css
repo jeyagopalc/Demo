@@ -17,8 +17,8 @@ a, a:hover, a:focus {
 }
 
 h1, h2 {
-	margin-top: 0px;
-	font-size: 30px;
+	margin-top: 10px;
+	font-size: 38px;
     font-weight: 100;
     color: #555;
     line-height: 50px;
@@ -31,12 +31,19 @@ h3 {
     line-height: 30px;
 }
 
+h4{
+	font-size: 18px;
+    font-weight: 300;
+    color: #FF0000;
+    line-height: 22px;
+}
+
 img { max-width: 100%; }
 
 ::-moz-selection { background: #19b9e7; color: #fff; text-shadow: none; }
 ::selection { background: #19b9e7; color: #fff; text-shadow: none; }
 
-
+/*
 .btn-link-1 {
 	display: inline-block;
 	height: 50px;
@@ -66,7 +73,7 @@ img { max-width: 100%; }
 }
 .btn-link-2:hover, .btn-link-2:focus, 
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
-
+*/
 
 /***** Top menu *****/
 
@@ -102,27 +109,26 @@ ul.navbar-nav {
 
 .navbar-brand {
 	width: 123px;
-	height: 90px;
-	background: url(../img/letsdiscusspng.png) left center no-repeat;
+	background: url(../img/logo.png) left center no-repeat;
 	text-indent: -99999px;
 }
 
 #g-search-button {
   display: inline-block;
   width: 26px;
-  height: 26px;
+  height: 22px;
   position: relative;
   left: -40px;
   top: 8px;
   background: url(../img/Search-52.png);  
 }
 
-.btn-answer {
+.btn-answer ,.btn-login-page, .btn-signup-page, .btn-questions, .btn-ask-question{
     border: none;
     background-color: transparent;
     outline: none;
 }
-.btn-answer:focus {
+.btn-answer :focus,.btn-login-page:focus , .btn-signup-page:focus, .btn-questions:focus, .btn-ask-question:focus{
     border: none;
 }
 
@@ -222,7 +228,7 @@ form.login-form fieldset {
 	display: none;
 }
 
-.btn-signup-page{
+.form-top-left.btn-signup-page{
 	background-color:#fff;
 	autofocus:true;	
 	display: inline-block;
@@ -274,7 +280,7 @@ only screen and (                min-resolution: 2dppx) {
 	
 	/* logo */
     .navbar-brand {
-    	background-image: url(../img/letsdiscusspng.png) !important; background-repeat: no-repeat !important; background-size: 123px 49px !important;
+    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 123px 49px !important;
     }
 	
 }
